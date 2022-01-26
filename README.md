@@ -3,7 +3,7 @@
 </p>
 <div align="center">
 
-# RapeSenpai
+# 淦念万岁
 **新概念高龙南游戏**
 </div>
 

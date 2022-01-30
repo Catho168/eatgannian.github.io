@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="老王起始页">
+	<meta name="keywords" content="起始页,老王集团,老王,实用,搜索,深圳市龙华区少年科学院">
+	<meta http-equiv="keywords" content="起始页,老王集团,老王,实用,搜索,深圳市龙华区少年科学院">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Page-Enter" contect="revealTrans(duration=1.0,transtion=12)">
+	<title>老王起始页</title>
+	<link href="https://live2d-cdn.fghrsh.net/assets/1.4.2/waifu.min.css">
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<style type="text/css">
+		body{
+			background-image: URL(https://up.enterdesk.com/edpic_source/42/f3/f7/42f3f796a326707a796ec644af28e1a1.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		}
+		* {
+	margin:0;
+	padding:0;
+}
+body {
+	width:100%;
+	height:100%;
+	height:auto;
+}
+.bt {
+	width:70%;
+	margin:2rem auto;
+	padding:1em;
+	background:hsla(0,0%,100%,.25) border-box;
+	overflow:hidden;
+	border-radius:35px;
+	box-shadow:0 0 0 1px hsla(0,0%,100%,.3) inset,0 .5em 1em rgba(0,0,0,0.6);
+	text-shadow:0 1px 1px hsla(0,0%,100%,.3);
+}
+.bt::before {
+	content:'';
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin:-30px;
+	z-index:-1;
+	-webkit-filter:blur(20px);
+	filter:blur(20px);
+}
+		.dan {
+	width:75px;
+	height: 75px;
+	position: fixed;
+	right: 20px;
+	margin:2rem auto;
+	padding:1em;
+	background:hsla(0,0%,100%,.25) border-box;
+	overflow:hidden;
+	border-radius:20px;
+	box-shadow:0 0 0 1px hsla(0,0%,100%,.3) inset,0 .5em 1em rgba(0,0,0,0.6);
+	text-shadow:0 1px 1px hsla(0,0%,100%,.3);
+	word-break: break-all;
+    white-space: normal;
+}
+.dan::before {
+	content:'';
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin:-30px;
+	z-index:-1;
+	-webkit-filter:blur(20px);
+	filter:blur(20px);
+}
+		.a{
+    height: 0px;
+	top: 50%;
+    border-bottom: 50px  solid rgba(225,225,225,.6);
+    box-shadow: 2px 1px 0px rgba(0,0,0,.5);
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+.b{
+    height: 1px;
+    width: 100%;
+    position: absolute;
+}
+		.all{
+			width: 100%;
+height: 50px;
+position: fixed;
+bottom: 0;
+		}
+	</style>
+	<style type="text/css">
+		.time{
+			width:110px;
+			height: 100px;
+			margin: 60px auto;
+			text-shadow:1px 1px 1px #000;
+		}
+	</style>
+</head>
+
+<body id="bg" style="font-family: 'Microsoft YaHei';">
+    <!-- waifu-tips.js 依赖 JQuery 库 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <!-- 实现拖动效果，需引入 JQuery UI -->
+ 
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
+ 
+    
+ 
+    <!-- 使用 aotuload.js 引入看板娘 -->
+ 
+    <script>
+ 
+        try {
+ 
+            var url = 'https://live2d-cdn.fghrsh.net/';
+ 
+            $("<link>").attr({
+ 
+                href: url+"assets/1.4.2/waifu.min.css",
+ 
+                rel: "stylesheet",
+ 
+                type: "text/css"
+ 
+            }).appendTo('head');
+ 
+            $('body').append('<div class="waifu"><div class="waifu-tips"></div><canvas id="live2d" class="live2d"></canvas><div class="waifu-tool"><span class="fui-home"></span> <span class="fui-chat"></span> <span class="fui-eye"></span> <span class="fui-user"></span> <span class="fui-photo"></span> <span class="fui-info-circle"></span> <span class="fui-cross"></span></div></div>');
+ 
+            $.ajax({
+ 
+                url: url+'assets/1.4.2/waifu-tips.min.js',
+ 
+                dataType: "script",
+ 
+                cache: true,
+ 
+                success: function () {
+ 
+                    $.ajax({
+ 
+                        url: url+'assets/1.4.2/live2d.min.js',
+ 
+                        dataType: "script",
+ 
+                        cache: true,
+ 
+                        success: function () {
+ 
+                            live2d_settings['hitokotoAPI'] = 'hitokoto.cn';
+ 
+                            live2d_settings['modelId'] = 5;
+ 
+                            live2d_settings['modelTexturesId'] = 1;
+ 
+                            live2d_settings['modelStorage'] = false;
+ 
+                            initModel(url+'assets/1.4.2/waifu-tips.json');
+ 
+                        }
+ 
+                    });
+ 
+                }
+ 
+            });
+ 
+        } catch (err) {
+ 
+            console.log('[Error] JQuery is not defined.')
+ 
+        }
+ 
+    </script>
+	<div style="align-self: center;font-size: 45px; color:#ffffff" id="timeout" class="time" onclick="window.open('http://www.time.is')">
+        <script>
+            function getTime() {
+                var date = new Date();
+                var hour = date.getHours(); //获取小时
+                hour = hour < 10 ? '0' + hour : hour;
+                var minute = date.getMinutes(); // 获取分
+                minute = minute < 10 ? '0' + minute : minute;
+                document.getElementById("timeout").innerHTML = hour + ':' + minute;
+            }
+     
+            setInterval(function() {
+                document.querySelector('.box').innerHTML = getTime();
+            }, 1000)
+	
+			function Test() {
+            if (document.getElementById("bg").style.backgroundImage.indexOf('https://up.enterdesk.com/edpic_source/42/f3/f7/42f3f796a326707a796ec644af28e1a1.jpg') > 0) {
+                document.getElementById("bg").style.backgroundImage = "url('https://up.enterdesk.com/edpic_source/8b/80/b9/8b80b9f08828b1881ebd127ddf845afa.jpg')";
+            }
+            else {
+                document.getElementById("bg").style.backgroundImage = "url('https://up.enterdesk.com/edpic_source/42/f3/f7/42f3f796a326707a796ec644af28e1a1.jpg')";
+            }
+ 
+        }
+        </script>
+	</div>
+	<form action="http://www.baidu.com/baidu" target="_blank" style="text-align:center">
+    	<input id="input_baidu" type="text"  onfocus="checkHttps" name="word" size="10" class="bt" style="font-size:18px"/>
+    </form>
+	<div>
+    <input type="button" id="btn" onclick="javascript:Test();" value="开/关灯" class="dan" style="font-size: 16px"/>
+    </div>
+	<div class="all">
+            <div class="a">
+                <div style="color: aliceblue;text-shadow: 1px 1px 1px #000;text-align: center"> 
+				Companyright 老王集团 2017-2022 
+				</div>
+                <div class="b">
+                </div>
+</div>
+        </div>
+
+</body>
+</html>

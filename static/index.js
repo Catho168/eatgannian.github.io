@@ -127,7 +127,7 @@
         _gameScore = 0;
         _gameOver = false;
         _gameStart = false;
-        _gameTimeNum = 20;
+        _gameTimeNum = 40;
         GameTimeLayer.innerHTML = creatTimeText(_gameTimeNum);
         countBlockSize();
         refreshGameLayer(GameLayer[0]);

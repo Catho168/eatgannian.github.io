@@ -60,7 +60,7 @@
 
     w.refreshSize = function() {
         clearTimeout(refreshSizeTime);
-        refreshSizeTime = setTimeout(_refreshSize, 200);
+        refreshSizeTime = setTimeout(_refreshSize, 400);
     }
 
     w._refreshSize = function() {
@@ -180,7 +180,7 @@
 
     w.gameTime = function() {
         _gameTimeNum--;
-        if (_gameTimeNum <= -20) {
+        if (_gameTimeNum <= 0) {
             GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;时间到！';
             gameOver();
             GameLayerBG.className += ' flash';
@@ -312,6 +312,7 @@
         l.className = l.className.replace(/bgc\d/, 'bgc' + c);
         document.getElementById('GameScoreLayer-text').innerHTML = shareText(_gameScore);
         let score_text = '得分&nbsp;&nbsp;';
+        let _gameScore = '187'
         score_text += deviation_time < 23000 ? _gameScore : "<span style='color:red;'>" + _gameScore + "</span>";
         document.getElementById('GameScoreLayer-score').innerHTML = score_text;
         let bast = cookie('bast-score');
@@ -345,7 +346,7 @@
         let date2 = new Date();
         deviation_time = (date2.getTime() - _date1.getTime())
         if (deviation_time > 23000) {
-            return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
+            return '倒计时多了' + ((deviation_time / 1000) - 40).toFixed(2) + "s";
         }
         SubmitResults();
         if (score <= 49) return '逊呐';

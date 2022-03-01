@@ -137,7 +137,7 @@
     w.gameStart = function() {
         _date1 = new Date();
         _gameStart = true;
-        _gameTime = setInterval(gameTime, 1000);
+        _gameTime = setInterval(gameTime, 2000);
     }
 
     w.gameOver = function() {
@@ -180,7 +180,7 @@
 
     w.gameTime = function() {
         _gameTimeNum--;
-        if (_gameTimeNum <= 0) {
+        if (_gameTimeNum <= -20) {
             GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;时间到！';
             gameOver();
             GameLayerBG.className += ' flash';

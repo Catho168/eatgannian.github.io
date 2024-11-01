@@ -11,14 +11,14 @@ body {
     background-size: auto 60%;
 }
 
-.start_btn{
-    display:inline-block;
-    margin:0 auto;
-    width:8em;
-    height:1.7em;
-    line-height:1.7em;
-    font-size:2.2em;
-    color:#fff;
+.start_btn {
+    display: inline-block;
+    margin: 0 auto;
+    width: 8em;
+    height: 1.7em;
+    line-height: 1.7em;
+    font-size: 2.2em;
+    color: #fff;
 }
 
 .SHADE {
@@ -146,7 +146,7 @@ body {
 .t4,
 .t5 {
     background-size: auto 100%;
-    background-image: url(./image/ClickBefore.png);
+    background-image: url(./image/BeforeClick.png);
 }
 
 .tt1,
@@ -155,7 +155,7 @@ body {
 .tt4,
 .tt5 {
     background-size: auto 86%;
-    background-image: url(./image/AfterClicking.png);
+    background-image: url(./image/AfterClick.png);
 }
 
 .bl {
@@ -166,9 +166,11 @@ body {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -178,9 +180,11 @@ body {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
